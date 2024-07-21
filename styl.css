@@ -3,58 +3,56 @@
     margin: 0;
     padding: 0;
     background-color: rgb(26, 25, 23);
-}
-
-   
-.navbar{
-    background-color:rgb(26, 25, 23);
-    color: rgb(26, 25, 23);
-    height: 35px;
-    border:none;
-    display: flex;
-    flex-wrap: nowrap;
-    
-    /* justify-content: center;*/
-    align-content: center; 
-    width: 100%;
-    justify-content: space-between;
     font-family: "Space Mono", monospace;
-    
-
 }
-hr{
-    border: 0;
-    border-top: 1px solid lightgray;
-}
-#logo{
-    color:aliceblue;
-    /* width: 49px; */
-    height: 35px;
-    /* display: flex;
+.navbar{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between;  */
-    align-content: center;
-    font-weight: 500;
-    font-size: medium;
-    margin-left: 15px;   
-}
-p{
-    text-align: center;
+    height: 50px;
+   
+  
+   
 }
 .content{
-     background-color: rgb(26, 25, 23);  
-    color: aliceblue;
-    height: 35px;
-    width: 450px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    list-style: none;
+    justify-content: space-between;
    
+  
+    height: 30px;
+    width:400px;
+    color: #ffffff;
+    
+}
+.home a{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(244, 238, 238);
+    font-size: medium;
+    
+}
+#logo{
+    color: #ffffff;
+    font-size: large;
+    font-weight: 500;
+    padding-left: 15px;
+    border: none;
+}
+/* @media (max-width:475px) {
+    .content{
+        visibility: hidden;
+    }
+    
+} */
+
    
-   /* justify-content: space-evenly; */
 
-
-} 
+.home a{
+    list-style-type: none;
+    text-decoration: none;
+   
+}
 /* .content:hover{
     
 }    */
@@ -77,6 +75,7 @@ ul{
 a{
     text-decoration: none;
     
+    
 }
 .home{
     /* background-color: rgb(33, 33, 34); */
@@ -93,16 +92,12 @@ a{
    
 }
 
-.home :hover{
+ .home :hover{
     background-color:#fffffffa;
     color: black;
     
     transition-duration: 1s;
-
-}
-.home a {
-    color: aliceblue;
-}
+ }
 .icon{
    
     height: 35px;
@@ -110,7 +105,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    border: none;
+    margin-right: 30px;
     
     
 }
@@ -120,7 +116,7 @@ a{
     height: 200px;
     
     display: flex;
-    margin-bottom: 20px;
+    /* margin-bottom: px; */
     /* margin-left: 15px; */
     
    
@@ -236,6 +232,9 @@ a{
     /* align-items: center; */
     margin-bottom: 0px;
 }
+.about{
+    margin-top: 10px;
+}
 .abt{
      margin-left: 15px;
      font-size: large;
@@ -270,7 +269,7 @@ a{
     background-color:rgb(26, 25, 23);
    
     display: flex;
-     flex-wap: nowrap; 
+    /* flex-wap: wrap; */
    
     margin-top: 20px;
     font-family: "Space Mono", monospace;
@@ -383,11 +382,13 @@ a{
     /* margin-top: 5px; */
     font-family: "Space Mono", monospace;
 }
-.projecta{
-    margin-left: 15px;
+
+   
+    
+
     
     
-}
+
 .chatap{
    
     width:150px;
@@ -451,8 +452,8 @@ a{
    
     /* justify-content: space-evenly; */
     border-radius: 6px;
-   
-    
+   margin-left: 5px;
+
 }
 .ecommerce1{
     height:90px;
@@ -495,7 +496,15 @@ a{
 
 /* .html{
     overflow: auto; */
+@media(max-width:448){
+   .home{
+    visibility: hidden;
+   }
+   .navbar{
+    margin-left: 0;
+   }
 
+}
 @media(max-width:475px)
 {
    
@@ -503,16 +512,26 @@ a{
         visibility: hidden;
     }
     .navbar{
+        
         width: 100%;
+      
     }
+    #logo{
+        padding-left: 15px;
+    }
+   
+    
     .content{
-        justify-content: flex-end;
+        
+        visibility: hidden;
+        display: contents;
        
 
     }
     .icon{
         display: flex;
         align-self: center;
+        padding-right: 5px;
         
     }
     .imga{
@@ -535,14 +554,10 @@ a{
         flex-direction: column;
         align-items: center;
         /* justify-conent: center; */
-        
-      
-       
-        
        
     }
     .intro{
-        margin: 0;
+        margin-right: 20px;
         padding: 0;
 
         justify-content:space-between;
@@ -563,10 +578,12 @@ a{
     }
     .button{
         align-self: center;
+        width: 200px;
 
     }
     .contact{
         font-size: 10px;
+        margin-right: 5px;
 
     }
     .resume{
@@ -601,29 +618,37 @@ a{
         display: flex;
        
         flex-wrap: wrap;
-        flex-wrap:nowrap;
+        flex-wrap: nowrap;
         width: 170px;
+        
        
-        gap:10px;
         
     }
-    .css{
-        margin-left: 15px;
+   
+h4{
+        font-size: small;
+        /* max-width:fit-content; */
     }
-    .django{
-        margin-left: 15px;
-    }
-    .parent{
+    
+.parent{
     width: 100%;
     height: 122px;
     background-color:rgb(26, 25, 23);
     display: flex;
     border-radius: 6px;
     padding-top: 15px;
+
+    flex-wrap: wrap;
     flex-wrap: nowrap;
     /* margin-top: 5px; */
     font-family: "Space Mono", monospace;
 }
+    .css{
+        margin-left: 15px;
+    }
+    .django{
+        margin-left: 15px;
+    }
     
 }
 
